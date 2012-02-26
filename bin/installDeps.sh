@@ -3,6 +3,12 @@
 #Move to the folder where ep-lite is installed
 cd `dirname $0`
 
+#Setting path
+PATH=$PATH:/usr/local/bin
+
+#Checking path
+echo $PATH
+
 #Was this script started in the bin folder? if yes move out
 if [ -d "../bin" ]; then
   cd "../"
@@ -14,17 +20,17 @@ hash curl > /dev/null 2>&1 || {
   exit 1 
 }
 
-#Is node installed?
-#hash node > /dev/null 2>&1 || { 
-#  echo "Please install node.js ( http://nodejs.org )" >&2
-#  exit 1 
-#}
+Is node installed?
+hash node > /dev/null 2>&1 || { 
+  echo "Please install node.js ( http://nodejs.org )" >&2
+  exit 1 
+}
 
-#Is npm installed?
-#hash npm > /dev/null 2>&1 || { 
-#  echo "Please install npm ( http://npmjs.org )" >&2
-#  exit 1 
-#}
+Is npm installed?
+hash npm > /dev/null 2>&1 || { 
+  echo "Please install npm ( http://npmjs.org )" >&2
+  exit 1 
+}
 
 #check npm version
 NPM_VERSION=$(npm --version)
