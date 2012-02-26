@@ -15,16 +15,16 @@ hash curl > /dev/null 2>&1 || {
 }
 
 #Is node installed?
-hash node > /dev/null 2>&1 || { 
-  echo "Please install node.js ( http://nodejs.org )" >&2
-  exit 1 
-}
+#hash node > /dev/null 2>&1 || { 
+#  echo "Please install node.js ( http://nodejs.org )" >&2
+#  exit 1 
+#}
 
 #Is npm installed?
-hash npm > /dev/null 2>&1 || { 
-  echo "Please install npm ( http://npmjs.org )" >&2
-  exit 1 
-}
+#hash npm > /dev/null 2>&1 || { 
+#  echo "Please install npm ( http://npmjs.org )" >&2
+#  exit 1 
+#}
 
 #check npm version
 NPM_VERSION=$(npm --version)
