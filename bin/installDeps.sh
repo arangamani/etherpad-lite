@@ -3,12 +3,6 @@
 #Move to the folder where ep-lite is installed
 cd `dirname $0`
 
-#Setting path
-PATH=$PATH:/usr/local/bin
-
-#Checking path
-echo $PATH
-
 #Was this script started in the bin folder? if yes move out
 if [ -d "../bin" ]; then
   cd "../"
