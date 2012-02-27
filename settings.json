@@ -13,7 +13,7 @@
   "dbType" : "dirty",
   //the database specific settings
   "dbSettings" : {
-                   "filename" : "rightscale_dbfile"
+                   "filename" : "/var/etherpad-lite/rightscale_dbfile"
                  },
 
   //the default text of a pad
