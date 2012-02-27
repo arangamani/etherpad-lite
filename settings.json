@@ -11,7 +11,7 @@
   //The Type of the database and settings.
   "dbType" : "mysql",
   "dbSettings" : {
-                    "user"    : "etherpadlite",
+                    "user"    : "root",
                     "host"    : "localhost",
                     "password": "rightscale_db_password",
                     "database": "etherpadlite"
