@@ -8,13 +8,15 @@
   "ip": "rightscale_ip",
   "port" : rightscale_port,
   
-  //The Type of the database. You can choose between dirty, sqlite and mysql
-  //You should use mysql or sqlite for anything else than testing or development
-  "dbType" : "dirty",
-  //the database specific settings
+  //The Type of the database and settings.
+  "dbType" : "mysql",
   "dbSettings" : {
-                   "filename" : "/var/etherpad-lite/rightscale_dbfile"
-                 },
+                    "user"    : "etherpadlite",
+                    "host"    : "localhost",
+                    "password": "rightscale_db_password",
+                    "database": "etherpadlite"
+                  },
+ 
 
   //the default text of a pad
   "defaultPadText" : "Welcome to Etherpad Lite!\n\nThis pad is created as part of a project with Rightscale by Arangamanikkannan Manickam. The text in this pad is synchronized as you type, so that everyone viewing this page sees the same text. This allows you to collaborate seamlessly on documents!\n\n",
