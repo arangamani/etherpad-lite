@@ -1,33 +1,23 @@
 /*
-  This file must be valid JSON. But comments are allowed
-
-  Please edit settings.json, not settings.json.template
+  This file must be valid JSON. But comments are allowed.
+  In this file, some of the important attributes are named in way that will be
+  easy to be replaced by Rightscale cloud management platform while booting.
 */
 {
   //Ip and port which etherpad should bind at
-  "ip": "0.0.0.0",
-  "port" : 80,
+  "ip": "rightscale_ip",
+  "port" : rightscale_port,
   
   //The Type of the database. You can choose between dirty, sqlite and mysql
   //You should use mysql or sqlite for anything else than testing or development
   "dbType" : "dirty",
   //the database specific settings
   "dbSettings" : {
-                   "filename" : "../var/dirty.db"
+                   "filename" : "rightscale_dbfile"
                  },
-                 
-  /* An Example of MySQL Configuration
-   "dbType" : "mysql",
-   "dbSettings" : {
-                    "user"    : "root", 
-                    "host"    : "localhost", 
-                    "password": "", 
-                    "database": "store"
-                  },
-  */
-  
+
   //the default text of a pad
-  "defaultPadText" : "Welcome to Etherpad Lite!\n\nThis pad text is synchronized as you type, so that everyone viewing this page sees the same text. This allows you to collaborate seamlessly on documents!\n\nEtherpad Lite on Github: http:\/\/j.mp/ep-lite\n",
+  "defaultPadText" : "Welcome to Etherpad Lite!\n\nThis pad is created as part of a project with Rightscale by Arangamanikkannan Manickam. The text in this pad is synchronized as you type, so that everyone viewing this page sees the same text. This allows you to collaborate seamlessly on documents!\n\n",
   
   /* Users must have a session to access pads. This effectively allows only group pads to be accessed. */
   "requireSession" : false,
